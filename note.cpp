@@ -63,7 +63,7 @@ int main(int argc, char** argv) {
   std::stringstream line_buffer;
   line_buffer << time_buffer << ": ";
   for (int i = 1; i < argc; ++i) {
-    line_buffer << argv[i];
+    line_buffer << argv[i] << " ";
   }
 
   std::string line = line_buffer.str();
